@@ -1,0 +1,269 @@
+body {
+    background-color: pink;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+/* LOGIN MODAL*/
+
+aside {
+    background-color: rgba(3, 3, 3, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-open {
+    display:flex;
+}
+
+.modal {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.modal h2 {
+    font-size: 20px;
+}
+
+.modal a {
+    font-size: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    font-family: 'Nunito', sans serif;
+}
+
+form input::placeholder {
+    font-family: 'Nunito', sans serif;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+
+}
+
+#close {
+    width: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+nav a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #FF5358;
+}
+
+/* LANDING*/
+
+main {
+    text-align: center;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+    background-color: #A9A9A9;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 40px;
+
+}
+
+main h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+main p {
+    font-weight: 600;
+}
+
+.airbnb-btn {
+    background-color: #FF5358;
+    display: block;
+    width: 250px;
+    margin: 15px auto;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #E00007;
+    transition: 0.4s ease-in-out;
+}
+
+.airbnb-btn:hover {
+    background-color: #E00007;
+}
+
+/* LOCALS SECTION*/
+
+.locals {
+    background-color: #EFEFEF;
+    padding: 40px;
+}
+
+.locals article {
+    border: 1px solid #DBDBDB;
+}
+
+.locals article:first-child {
+    margin-bottom: 40px;
+    }
+
+.locals-desc {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.locals img {
+    padding-right: 5px;
+}
+
+.locals h2 {
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.locals p {
+    font-size: 12px;
+}
+
+@media (min-width: 600px) {
+    .locals {
+        display: flex;
+    }
+
+    .locals article:first-child {
+    margin-bottom: 0;
+    margin-right: 40px;
+    }
+}
+
+/* NEIGHBORHOOD SECTION*/
+
+.neighborhoods {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.neighborhoods h2 {
+    font-size: 34px;
+    margin: 0;
+}
+
+.neighborhoods h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.hood {
+    height: 250px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #A9A9A9;
+    background-blend-mode: multiply;
+    transition: 0.3s ease-in-out;
+}
+
+.hood:hover {
+    color:black;
+    background-blend-mode: lighten;
+}
+
+.hood h4 {
+    font-size: 25px;
+    margin:0;
+}
+
+.hood p {
+    font-size: 14px;
+}
+
+.fitzroy {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg);
+
+}
+
+.stkilda {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg);
+}
+
+.cbd {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg);
+}
+
+@media (min-width: 600px) {
+.three-neighborhoods {
+    display: flex;
+    justify-content: space-between;
+}
+.hood  {
+    width: 30%;
+}
+}
+
+
+/* FOOTER*/
+
+footer {
+    background-color: #2B2D2E;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+hr {
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
